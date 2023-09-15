@@ -84,3 +84,28 @@ select {
   --font-family-primary: "Manrope", sans-serif;
   --font-weight-extra-bold: 800;
 }
+
+/* || Global styles */
+body {
+  display: grid;
+  place-content: center;
+  background-color: var(--color-dark-blue);
+  color: var(--color-light-cyan);
+  font-family: var(--font-family-primary);
+  font-size: 1.5rem;
+  font-weight: var(--font-weight-extra-bold);
+  line-height: normal;
+  text-align: center;
+}
+
+.sr-only {
+  position: absolute;
+  width: 0.0625rem;
+  height: 0.0625rem;
+  padding: 0;
+  margin: -0.0625rem;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
