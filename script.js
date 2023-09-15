@@ -18,7 +18,7 @@ const displayAdvice = () => {
         slip: { advice },
       } = data;
       adviceIDText.textContent = id;
-      adviceText.textContent = `"${advice}"`;
+      adviceText.textContent = `\u201C${advice}\u201D`;
     })
     .catch(() => {
       adviceText.textContent =
