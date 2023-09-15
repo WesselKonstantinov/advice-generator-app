@@ -9,6 +9,7 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <script defer src="./script.js"></script>
     <title>Frontend Mentor | Advice generator app</title>
   </head>
   <body>
@@ -35,10 +36,13 @@
             class="card__divider"
           />
         </picture>
-        <button class="card__button js-button">
+        <button
+          class="card__button js-button"
+          aria-label="Generate a new piece of advice"
+        >
           <img
             src="./images/icon-dice.svg"
-            alt="Request a random piece of advice"
+            alt=""
             width="24"
             height="24"
             class="card__button-icon"
