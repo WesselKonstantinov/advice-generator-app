@@ -109,3 +109,59 @@ body {
   white-space: nowrap;
   border-width: 0;
 }
+
+/* || Advice card styles  */
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 1rem;
+  padding: 2.5rem 1.5rem;
+  max-width: 33.75rem;
+  background-color: var(--color-dark-grayish-blue);
+  border-radius: 0.625rem;
+  box-shadow: 1.875rem 3.125rem 5rem hsl(0 0% 0% / 0.1);
+}
+
+.card__heading {
+  color: var(--color-neon-green);
+  font-size: 0.6875rem;
+  font-weight: inherit;
+  letter-spacing: 0.3143em;
+  text-transform: uppercase;
+}
+
+.card__quote {
+  letter-spacing: -0.0107em;
+}
+
+.card__divider {
+  width: 18.4375rem;
+  height: 1rem;
+  object-fit: cover;
+}
+
+.card__button {
+  margin-bottom: -4.5rem;
+  padding: 1.25rem;
+  background-color: var(--color-neon-green);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: box-shadow 0.2s ease-out 0s;
+}
+
+.card__button:hover {
+  box-shadow: 0 0 2.5rem var(--color-neon-green);
+}
+
+.card__button:focus-visible {
+  outline: 0.2rem solid var(--color-neon-green);
+  outline-offset: 0.2rem;
+}
+
+.card__button-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
